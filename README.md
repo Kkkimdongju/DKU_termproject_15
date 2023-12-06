@@ -7,7 +7,7 @@
  ### 3) 설치한 라이브러리
  #### - PyYAML, ultralytics
  ## 2. 실행방법
- ### 1) 리포지토리에 업로드 한 helmet.ipynb파일을 구글 colab에서 열기
+ ### 1) 리포지토리에 업로드 한 yolo.ipynb파일을 구글 colab에서 열기
  ### 2) 커스텀 데이터를 colab으로 다운로드
   ```python
  !wget -O Helmet_data.zip https://app.roboflow.com/ds/1Rj6BECRju?key=exdDCuJd4R
