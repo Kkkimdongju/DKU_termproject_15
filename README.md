@@ -1,7 +1,7 @@
 # Helmet detection(YOLOv8)
 ## 1. 개발환경
  ### 1) 사용한 OS
- #### -MacOS, Window 10
+ #### - MacOS, Window 10
  ### 2) 파이썬 버전
  #### - 3.10.12
  ### 3) 설치한 라이브러리
