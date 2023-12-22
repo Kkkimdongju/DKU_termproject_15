@@ -94,6 +94,7 @@ import tensorflow as tf
 tf.keras.backend.clear_session()
 
 from tensorflow.keras.applications.mobilenet_v3 import preprocess_input
+
 import os
 import json
 import cv2
@@ -199,6 +200,7 @@ labels = to_categorical(labels, num_classes=len(coco_data["categories"]))
 ```python
 # 모델 학습
 num_epochs = 70
+batch_size = 10  # 메모리 효율을 위해 작은 배치 크기 사용
 model.fit(images, labels, epochs=num_epochs, batch_size=batch_size, callbacks=[tensorboard_callback])
 ```
 ### 6) 모델 저장
@@ -401,7 +403,7 @@ log_dir = "logs/weights_visualization"
 # 텐서보드 콜백 설정
 tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
 ```
-### 5) 모델 학슴
+### 5) 모델 학습
 ```python
 # 모델 학습
 num_epochs = 200
